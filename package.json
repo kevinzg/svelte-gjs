@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "rollup src/main.js -c rollup.config.js",
+    "start": "npm run build && gjs -m build/bundle.js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.21.0",
+    "rollup-plugin-svelte": "^7.2.2",
+    "svelte": "^4.2.19"
+  }
+}
